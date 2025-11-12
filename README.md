@@ -68,7 +68,7 @@ Python Validation (4 Quality Tests)
 
 
 
-!\[View detailed architecture diagram →](docs/Architecture\_Diagram\_Data\_Pipeline.png)
+[View detailed architecture diagram →](docs/Architecture_Diagram_Data_Pipeline.png)
 
 
 
@@ -158,7 +158,7 @@ date,datetime,cash\_type,money,coffee\_name
 
 
 
-\[View validation results →](python\_validation/DataValidation.ipynb)
+[View validation results →](python_validation/DataValidation.ipynb)
 
 
 

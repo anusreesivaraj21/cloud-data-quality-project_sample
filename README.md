@@ -232,7 +232,7 @@ date,datetime,cash\_type,money,coffee\_name
 
 \# Install dependencies
 
-pip install -r "python\_validation/requirements.txt"
+pip install -r "python_validation/requirements.txt"
 
 
 
@@ -248,7 +248,7 @@ pip install -r "python\_validation/requirements.txt"
 
 jupyter notebook
 
-\# Open: python\_validation/DataValidation.ipynb
+# Open: python_validation/DataValidation.ipynb
 
 ```
 
@@ -258,11 +258,11 @@ jupyter notebook
 
 
 
-\##  Project Structure
+##  Project Structure
 
 ```
 
-cloud-data-quality-project\_sample/
+cloud-data-quality-project_sample/
 
 ├── README.md                       # This file
 
@@ -274,35 +274,35 @@ cloud-data-quality-project\_sample/
 
 ├── docs/
 
-│   ├── Architecture\_Diagram\_Data\_Pipeline.png   # System architecture
+│   ├── Architecture_Diagram_Data_Pipeline.png   # System architecture
 
 │   ├── screenshots/               # Implementation proof
 
-|        └──01Azure\_Resource\_Group.png
+|        └──01Azure_Resource_Group.png
 
-|        └──02Azure\_Storage\_Account.png
+|        └──02Azure_Storage_Account.png
 
-|        └──03Azure\_Container.png
+|        └──03Azure_Container.png
 
-|        └──04Storage\_integration.png
+|        └──04Storage_integration.png
 
-|        └──05Azure\_External\_Stage.png
+|        └──05Azure_External_Stage.png
 
-|        └──06Notification\_Integration.png
+|        └──06Notification_Integration.png
 
-|        └──07Table\_Description\_Salesrecord.png
+|        └──07Table_Description_Salesrecord.png
 
-|        └──08Table\_Description\_Salesrecordfinal.png
+|        └──08Table_Description_Salesrecordfinal.png
 
-|        └──09Pipe\_Status.png
+|        └──09Pipe_Status.png
 
-|        └──10Data\_Salesrecord.png
+|        └──10Data_Salesrecord.png
 
-|        └──11Data\_Salesrecordfinal.png
+|        └──11Data_Salesrecordfinal.png
 
-|        └──12Datavalidation\_Report.png
+|        └──12Datavalidation_Report.png
 
-├── python\_validation/
+├── python_validation/
 
 │   ├── DataValidation.ipynb       # Validation notebook with outputs
 
@@ -422,7 +422,7 @@ END OF REPORT
 
 
 
-\[View complete validation output →](docs/screenshots/)
+[View complete validation output →](docs/screenshots/)
 
 
 
@@ -542,9 +542,9 @@ END OF REPORT
 
 
 
-\[LinkedIn](https://www.linkedin.com/in/anusree-sivaraj/)
+[LinkedIn](https://www.linkedin.com/in/anusree-sivaraj/)
 
-\[GitHub](https://github.com/anusreesivaraj21/cloud-data-quality-project\_sample)
+[GitHub](https://github.com/anusreesivaraj21/cloud-data-quality-project\_sample)
 
 
 

@@ -364,37 +364,37 @@ TEST 2: Null Value Check
 
 &nbsp; Staging Table:
 
-&nbsp;   ORDER\_DATE: 0 nulls \[PASS]
+&nbsp;   ORDER_DATE: 0 nulls [PASS]
 
-&nbsp;   DATETIME: 0 nulls \[PASS]
+&nbsp;   DATETIME: 0 nulls [PASS]
 
-&nbsp;   MONEY: 0 nulls \[PASS]
+&nbsp;   MONEY: 0 nulls [PASS]
 
-&nbsp;   CASH\_TYPE: 0 nulls \[PASS]
+&nbsp;   CASH_TYPE: 0 nulls [PASS]
 
-&nbsp;   COFFEE\_NAME: 0 nulls \[PASS]
+&nbsp;   COFFEE_NAME: 0 nulls [PASS]
 
 
 
 &nbsp; Final Table:
 
-&nbsp;   ORDER\_DATE: 0 nulls \[PASS]
+&nbsp;   ORDER_DATE: 0 nulls [PASS]
 
-&nbsp;   DATETIME: 0 nulls \[PASS]
+&nbsp;   DATETIME: 0 nulls [PASS]
 
-&nbsp;   MONEY: 0 nulls \[PASS]
+&nbsp;   MONEY: 0 nulls [PASS]
 
-&nbsp;   CASH\_TYPE: 0 nulls \[PASS]
+&nbsp;   CASH_TYPE: 0 nulls [PASS]
 
-&nbsp;   COFFEE\_NAME: 0 nulls \[PASS]
+&nbsp;   COFFEE_NAME: 0 nulls [PASS]
 
-&nbsp;   TOTAL: 0 nulls \[PASS]
+&nbsp;   TOTAL: 0 nulls [PASS]
 
 
 
 TEST 3: Business Logic Validation
 
-&nbsp; Formula: TOTAL = MONEY \* 1.05
+&nbsp; Formula: TOTAL = MONEY * 1.05
 
 &nbsp; Errors: 0
 
@@ -404,7 +404,7 @@ TEST 3: Business Logic Validation
 
 TEST 4: Data Consistency Check
 
-&nbsp; Comparing 5 columns: CASH\_TYPE, COFFEE\_NAME, DATETIME, MONEY, ORDER\_DATE
+&nbsp; Comparing 5 columns: CASH_TYPE, COFFEE_NAME, DATETIME, MONEY, ORDER_DATE
 
 &nbsp; Result: PASS - All common data matches
 
@@ -417,8 +417,8 @@ END OF REPORT
 ============================================================
 
 
-
-```
+ 
+` ``
 
 
 

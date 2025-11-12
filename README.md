@@ -248,7 +248,7 @@ pip install -r "python_validation/requirements.txt"
 
 jupyter notebook
 
-# Open: python_validation/DataValidation.ipynb
+ Open: python_validation/DataValidation.ipynb
 
 ```
 
@@ -312,7 +312,7 @@ cloud-data-quality-project_sample/
 
 └── snowflake/
 
-&nbsp;   └── sales.sql                  # Complete Snowflake setup
+   └── sales.sql                  # Complete Snowflake setup
 
 ```
 

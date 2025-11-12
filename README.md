@@ -68,7 +68,7 @@ Python Validation (4 Quality Tests)
 
 
 
-\[View detailed architecture diagram →](docs/Architecture\_Diagram\_Data\_Pipeline.png)
+!\[View detailed architecture diagram →](docs/Architecture\_Diagram\_Data\_Pipeline.png)
 
 
 

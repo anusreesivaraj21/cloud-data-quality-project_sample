@@ -40,27 +40,27 @@ Event-driven data pipeline that automatically ingests coffee sales data from Azu
 
 Azure Blob Storage (CSV Upload)
 
-&nbsp;      ↓
+            ↓
 
 Snowpipe (Event-driven Auto-Ingest)
 
-&nbsp;      ↓
+            ↓
 
 Staging Table (Raw Data)
 
-&nbsp;      ↓
+            ↓
 
 Stream (Change Capture)
 
-&nbsp;      ↓
+            ↓
 
 Task (Hourly Transformation: +5% Markup)
 
-&nbsp;      ↓
+            ↓
 
 Final Table (Transformed Data)
 
-&nbsp;      ↓
+            ↓
 
 Python Validation (4 Quality Tests)
 
@@ -86,7 +86,7 @@ Python Validation (4 Quality Tests)
 
 | \*\*Auto-Ingestion\*\* | Snowpipe + Azure Event Grid | Files load automatically on upload |
 
-| \*\*Real-Time ETL\*\* | Snowflake Streams \& Tasks | Processes data hourly, zero manual work |
+| \*\*Real-Time ETL\*\* | Snowflake Streams & Tasks | Processes data hourly, zero manual work |
 
 | \*\*Data Quality\*\* | Python (pandas, numpy) | 4 automated tests catch errors |
 
@@ -106,7 +106,7 @@ Python Validation (4 Quality Tests)
 
 ```csv
 
-date,datetime,cash\_type,money,coffee\_name
+date,datetime,cash_type,money,coffee_name
 
 2025-02-08,2025-02-08 14:26:04,cash,15.0,Tea
 
@@ -116,13 +116,13 @@ date,datetime,cash\_type,money,coffee\_name
 
 
 
-\*\*Transformation:\*\* `TOTAL = MONEY \* 1.05` (5% markup)
+\*\*Transformation:\*\* `TOTAL = MONEY * 1.05` (5% markup)
 
 
 
 \*\*Output (Snowflake Final Table):\*\*
 
-| ORDER\_DATE | DATETIME | CASH\_TYPE | MONEY | COFFEE\_NAME | TOTAL |
+| ORDER_DATE | DATETIME | CASH_TYPE | MONEY | COFFEE_NAME | TOTAL |
 
 |------------|----------|-----------|-------|-------------|-------|
 
@@ -202,7 +202,7 @@ date,datetime,cash\_type,money,coffee\_name
 
 \### 1. Azure Configuration
 
-1\. Create Resource Group: `rg\_data\_pipeline`
+1\. Create Resource Group: `rg_data_pipeline`
 
 2\. Create Storage Account: `salesdata21`
 
@@ -352,61 +352,61 @@ DATA VALIDATION REPORT
 
 TEST 1: Row Count
 
-&nbsp; Staging: 524 rows
+       Staging: 524 rows
 
-&nbsp; Final:   524 rows
+       Final:   524 rows
 
-&nbsp; Result:  PASS
+       Result:  PASS
 
 
 
 TEST 2: Null Value Check
 
-&nbsp; Staging Table:
+         Staging Table:
 
-&nbsp;   ORDER_DATE: 0 nulls [PASS]
+         ORDER_DATE: 0 nulls [PASS]
 
-&nbsp;   DATETIME: 0 nulls [PASS]
+         DATETIME: 0 nulls [PASS]
 
-&nbsp;   MONEY: 0 nulls [PASS]
+         MONEY: 0 nulls [PASS]
 
-&nbsp;   CASH_TYPE: 0 nulls [PASS]
+         CASH_TYPE: 0 nulls [PASS]
 
-&nbsp;   COFFEE_NAME: 0 nulls [PASS]
+         COFFEE_NAME: 0 nulls [PASS]
 
 
 
-&nbsp; Final Table:
+         Final Table:
 
-&nbsp;   ORDER_DATE: 0 nulls [PASS]
+         ORDER_DATE: 0 nulls [PASS]
 
-&nbsp;   DATETIME: 0 nulls [PASS]
+         DATETIME: 0 nulls [PASS]
 
-&nbsp;   MONEY: 0 nulls [PASS]
+         MONEY: 0 nulls [PASS]
 
-&nbsp;   CASH_TYPE: 0 nulls [PASS]
+         CASH_TYPE: 0 nulls [PASS]
 
-&nbsp;   COFFEE_NAME: 0 nulls [PASS]
+         COFFEE_NAME: 0 nulls [PASS]
 
-&nbsp;   TOTAL: 0 nulls [PASS]
+         TOTAL: 0 nulls [PASS]
 
 
 
 TEST 3: Business Logic Validation
 
-&nbsp; Formula: TOTAL = MONEY * 1.05
+       Formula: TOTAL = MONEY * 1.05
 
-&nbsp; Errors: 0
+       Errors: 0
 
-&nbsp; Result: PASS
+       Result: PASS
 
 
 
 TEST 4: Data Consistency Check
 
-&nbsp; Comparing 5 columns: CASH_TYPE, COFFEE_NAME, DATETIME, MONEY, ORDER_DATE
+       Comparing 5 columns: CASH_TYPE, COFFEE_NAME, DATETIME, MONEY, ORDER_DATE
 
-&nbsp; Result: PASS - All common data matches
+       Result: PASS - All common data matches
 
 
 
